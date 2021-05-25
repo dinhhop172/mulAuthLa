@@ -1,0 +1,109 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.card-body img{
+   width: 100%;
+}
+a:hover{
+   text-decoration: none;
+}
+a{
+   color: rgb(13, 86, 146);
+}
+ul{
+   list-style-type: none;
+}
+.menu > li{
+   position: relative;
+   padding: 5px 13px;
+   border-radius: 7px;
+}
+.sub-menu{
+   display: none;
+   position: absolute;
+}
+.menu > li:hover .sub-menu{
+   display: block;
+}
+.menu li{
+   display: inline-block;
+}
+/* //nav login */
+.nav-login > a{
+   padding: 5px 13px;
+}
+
+.buttons_added {
+   opacity:1;
+   display:inline-block;
+   display:-ms-inline-flexbox;
+   display:inline-flex;
+   white-space:nowrap;
+   vertical-align:top;
+}
+.is-form {
+   overflow:hidden;
+   position:relative;
+   background-color:#f9f9f9;
+   height:2.2rem;
+   width:1.9rem;
+   padding:0;
+   text-shadow:1px 1px 1px #fff;
+   border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+   outline:none;
+}
+.is-form.minus {
+   border-radius:4px 0 0 4px;
+}
+.is-form.plus {
+   border-radius:0 4px 4px 0;
+}
+.input-qty {
+   background-color:#fff;
+   height:2.2rem;
+   text-align:center;
+   font-size:1rem;
+   display:inline-block;
+   vertical-align:top;
+   margin:0;
+   border-top:1px solid #ddd;
+   border-bottom:1px solid #ddd;
+   border-left:0;
+   border-right:0;
+   padding:0;
+}
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+   -webkit-appearance:none;
+   margin:0;
+}
+
+/* ////loadding//// */
+.loader {
+   border: 16px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 16px solid #3498db;
+   border-bottom: 16px solid #3498db;
+   width: 120px;
+   height: 120px;
+   -webkit-animation: spin 2s linear infinite;
+   animation: spin 2s linear infinite;
+   position: absolute;
+   top: 45%;
+   left: 45%;
+   transform: translate(-50%, -50%);
+   z-index: 999;
+ }
+ 
+ @-webkit-keyframes spin {
+   0% { -webkit-transform: rotate(0deg); }
+   100% { -webkit-transform: rotate(360deg); }
+ }
+ 
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
